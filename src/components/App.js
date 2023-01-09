@@ -159,3 +159,16 @@ function App() {
   return (
     <div id="main">
       <ul>
+    {states.map((item) => (
+          <Provinces
+            index={states.indexOf(item)}
+            name={item.name}
+            cities={item.cities}
+          />
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+export default App;
